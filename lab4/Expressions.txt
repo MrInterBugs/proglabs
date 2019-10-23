@@ -1,0 +1,5 @@
+print ((-3 - math.sqrt(3 * 3 - 4 * 2 * -5)) / (2 * 2))
+print ((-3 + math.sqrt(3 * 3 - 4 * 2 * -5)) / (2 * 2))
+
+1. This is the qudratic formula so there is the varibles a, b and c.
+2. the math.sqrt(3 * 3 - 4 * 2 * -5) is the common sub expression and should be called the discriminate.

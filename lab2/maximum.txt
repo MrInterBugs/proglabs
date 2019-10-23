@@ -1,0 +1,18 @@
+If you have the ability to compare two numbers and say which one is bigger, how do you find the maximum of a set of three numbers?
+You compear one with the other and discard the smallest one. Then compare the "largest" one with the final number and dsicard the smallest one.
+
+Start
+Array of numbers
+i = 0
+large = 0
+currentnum = firstnuminarray
+while i <= size of array
+	if large >= currentnum
+		currentnum = nextnuminarray
+		i = i + 1
+	else
+		large = i
+		currentnum = nextnuminarray
+		i = i + 1
+print large
+End

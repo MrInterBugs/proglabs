@@ -1,0 +1,4 @@
+Is the structure of my code clear?
+Having programmed microcontrollers the code is very easy to follow as it uses the same block system.
+How easy is it to prevent unintended pieces of code from being run?
+The code is run sequentially however blocks are very easy to skip by using goto commands as then the blocks which are skipped will not be run unless there is another goto command to take it back near the top of the program.

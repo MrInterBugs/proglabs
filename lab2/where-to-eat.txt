@@ -1,0 +1,34 @@
+Think about the different criteria that are relevant, and the different possible options that are available; can you identify a series of questions you can answer which will determine the best place?
+On campus, off campus?
+Cheap or expensive?
+Cafe or shop?
+Hot or cold?
+Type of Food? (Asian, burgers, sandwich, full cooked meal?)
+
+
+Produce some pseudo code that expresses the process described by your flowchart.
+Start
+Ask "On campus or off campus"
+if on campus
+	Ask "hot food or cold food"
+	if hot
+		Ask "burgers, general meals or other"
+		if burgers
+			goto tommy's kitchen
+		else if general meals
+			goto Founders Dinning Hall
+		else
+			goto The Hub
+		endif
+	else
+		ask "cafe or shop"
+		if shop
+			goto The union Shop
+		else
+			goto Boilerhouse
+		endif
+	endif	
+else
+	goto KW's
+endif
+End
