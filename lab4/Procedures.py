@@ -1,27 +1,21 @@
-n = 5
-k = 3
+def loop(n, x):
+	for i in range(1, n):
+		x = x * i
+	return x
 
-x = 1
-for i in range(1, n):
-   x = x * i
+def loop2(n, x, y):
+	for i in range(1, n):
+		x = x * (y/6)
+	return x
 
-y = 1
-for i in range(1, k):
-   y = y * i
-
-z = 1
-for i in range(1, n - k):
-   z = z * i
+x = loop(5, 1)
+y = loop(3, 1)
+z = loop(2, 1)
 
 c = x / (y * z)
 
-p = 1
-for i in range(1, k):
-   p = p * (1 / 6)
-
-q = 1
-for i in range(1, n - k):
-   p = p * (5 / 6)
+p = loop2(3, 1, 1)
+q = loop2(2, 1, 5)
 
 result = c * p * q
 print(result)
