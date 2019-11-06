@@ -28,7 +28,7 @@ public class Powers {
 		for(int i=0; i<n; i++) {
                         if(n == i*i*i) {
                                 System.out.println("it is a perfect cube.");
-																noans = false;
+                                noans = false;
 			}
     }
 		if(noans) {
