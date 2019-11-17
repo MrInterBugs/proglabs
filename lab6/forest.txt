@@ -1,0 +1,8 @@
+1. get a unit size of the land.
+2. Check other prices of nearby land that sold recently.
+3. find infaltion rate since last bits of land were sold.
+4. calculate how much this land is worth today.
+5. Also take into account amount of trees.
+6. are there any other features such as rivers.
+7. is it easy to acsess or is it a two hour walk away.
+8. Footpaths, or other protected areas?
