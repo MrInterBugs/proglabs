@@ -1,0 +1,5 @@
+// Two is prime but in this program it does not work as 2 % 2 = 0
+// One is  not prime as it needs two different divisors but only has one where as this program says it is
+// three works correctly
+// 1000000 works correctly
+// minus numbers show as prime when they are not
