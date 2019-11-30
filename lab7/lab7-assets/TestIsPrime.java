@@ -8,10 +8,15 @@ public class TestIsPrime {
         assert IsPrime.isPrime(72);
     }
 
+    public static void testZero() {
+	assert IsPrime.isPrime(0);
+    }
+
     // Add new test methods here
 
     public static void testAll() {
         testSimplePrime();
+	testZero();
         // Call new tests here
     }
 

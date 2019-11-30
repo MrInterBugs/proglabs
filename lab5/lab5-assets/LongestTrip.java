@@ -5,7 +5,7 @@ public class LongestTrip {
     public static void main(String[] args) {
         // a list of points {x, y}
         int[][] points = {{5, 10},
-                {23, 1},
+                {23, 100000000},
                 {75, 23},
                 {53, 22},
                 {95, 98},
@@ -35,7 +35,7 @@ public class LongestTrip {
         for (int i = 0; i<len; i++) {
             x1 = points[i][0]; 
             y1 = points[i][1];
-            for (int j = 0; j<len; j++) {
+            for () {
             	z = i++;
             	x2 = points[z][0]; 
                 y2 = points[z][1];
@@ -61,5 +61,12 @@ public class LongestTrip {
         c = a + b;
         c = Math.sqrt(c);
         return(c);
+		
+		for(int j = 0; j<len; j++) {                                               
+			for(int i = 0; i<len; i++) {                                           
+				if(distance_between(point1, point2) > longest_distance):    
+                longest_distance = distance_between(point1, point2)                               
+    return longest_distance
+	    }
     }
 }
