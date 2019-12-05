@@ -26,39 +26,41 @@ class Act:
     def set_stage(self, x):
         self.stage = x
 
-acts = []
 x = 0
 
 class LineUp:
+    def __init__(self):
+       self._acts = []
+
     def add_act(self, myact):
         global x
         if x < 30:
-            acts.append(Act(myact.num_members, myact.name, myact.kind, myact.stage))
+            self._acts.append(Act(myact.num_members, myact.name, myact.kind, myact.stage))
             x += 1
         else:
             print("The festival is full!")
 
     def __str__(self):
         i = 0
-        while i < len(acts):
-            print(acts[i].name + " is a " + acts[i].kind + " There will be " + str(acts[i].num_members) + " member/members on the stage and this will be preformed at "  + str(acts[i].stage) + "\n")
+        while i < len(self._acts):
+            print(self._acts[i].name + " is a " + self._acts[i].kind + " There will be " + str(self._acts[i].num_members) + " member/members on the stage and this will be preformed at "  + str(self._acts[i].stage) + "\n")
             i = i + 1
         return "Finsished"
-    def print(self):
+    def prints(self):
         i = 0
-        while i < len(acts):
-            print(acts[i].name + " is a " + acts[i].kind + " There will be " + str(acts[i].num_members) + " member/members on the stage and this will be preformed at "  + str(acts[i].stage) + "\n")
+        while i < len(self._acts):
+            print(self._acts[i].name + " is a " + self._acts[i].kind + " There will be " + str(self._acts[i].num_members) + " member/members on the stage and this will be preformed at "  + str(self._acts[i].stage) + "\n")
             i = i + 1
         return "Finsished"
     
     def numberOfActs(self):
-        print(len(acts))
+        print(len(self._acts))
         
     def totalMembers(self):
         i = 0
         count = 0
-        while i < len(acts):
-            count = count + acts[i].num_members
+        while i < len(self._acts):
+            count = count + self._acts[i].num_members
             i += 1
         print(str(count))
 
@@ -66,8 +68,8 @@ class LineUp:
         list = []
         i = 0
         count = 0
-        while i < len(acts):
-            kind = acts[i].kind
+        while i < len(self._acts):
+            kind = self._acts[i].kind
             if kind in list:
                 i += 1
             else:
